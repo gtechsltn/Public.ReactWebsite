@@ -6,7 +6,7 @@
     "generators": {
       "v1.0": {
         "generatorName": "typescript-axios",
-        "output": "app/api",
+        "output": "app/api-client",
         "inputSpec": "http://localhost:5000/swagger/v1/swagger.json"
       }
     }    
