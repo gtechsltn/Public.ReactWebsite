@@ -10,6 +10,7 @@
     "generate-api-client": "openapi-generator-cli generate"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.40.0",
     "axios": "^1.7.2",
     "classnames": "^2.5.1",
     "nanoid": "^5.0.7",

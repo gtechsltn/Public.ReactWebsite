@@ -1,11 +1,9 @@
-import { ImageResolution } from "../models/image-resolution.model";
+import { useQuery } from '@tanstack/react-query';
+import { ImageGroupApi } from '../api-client';
 
-export class ImageService {
-
-    public imageResolutions: { [key in ImageResolution] : string } = {
-      [ImageResolution.Avatar]: "Avatar",
-      [ImageResolution.OriginalSize]: "OriginalSize",
-      [ImageResolution.FullHd]: "FullHd",
-      [ImageResolution.Hd]: "Hd"
-    };
-}
+export const useGetImageGroupQuery = (id: number) => {
+  return useQuery({
+    queryFn: async () => await new ImageGroupApi().getImageGroup(id, "1" ),
+    queryKey: ["imageGroup"],
+  });
+};

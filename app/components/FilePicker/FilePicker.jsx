@@ -2,9 +2,9 @@ import axios from "axios";
 import classNames from "classnames";
 import { nanoid } from "nanoid";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import { DropZone } from "./drop-zone";
+import { DropZone } from "./DropZone";
 import styles from "./file-picker.module.css";
-import { FilesList } from "./files-list";
+import { FilesList } from "./FilesList";
 
 const FilePicker = ({ accept = ["*"], uploadURL }) => {
   const [files, setFiles] = useState([]);
